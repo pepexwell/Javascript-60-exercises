@@ -13,6 +13,10 @@ function Saber () {
     var num1 = parseInt(document.getElementById("campo1").value);
     var num2 = parseInt(document.getElementById("campo2").value);
 
+    Hacer(num1, num2);
+}
+
+function Hacer(num1, num2){
     var i  = 0;
     if (num2 > num1){
         i = num2 - num1;
@@ -25,4 +29,6 @@ function Saber () {
     for (var j = 1; j <= i; j++){
         document.getElementById("text1").innerHTML += j + " ";
     }
+
+    document.getElementById("text2").innerHTML = "Call from another function";
 }
